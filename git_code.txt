@@ -1,0 +1,102 @@
+-------------------------------------------本地git----------------------------------------------
+
+# 将文件夹设为本地git repo
+git init
+
+
+# 把文件加入暂存区
+git add filename.py filename.txt    
+
+
+# 把暂存区的文件提交到仓库
+# 修改1 --> git add --> 修改2 --> git add --> git commit | 提交的是修改2
+# 接上，因为git记录的是修改而不是文件
+git commit -m "comment"     # -m后面输入本次提交的说明
+
+
+# 查看提交历史 | 用于显示过去的commit码
+git log     
+git log --pretty=oneline    # 用于忽略冗余信息，只显示commit码和comment
+git log --graph             # 显示分支合并图
+git log --abbrev-commit     # 只显示comment和commit码
+
+
+# 查看命令历史 | 用于显示未来的commit码
+git reflog      
+
+
+# 返回/跃进 到某一版本
+git reset --hard HEAD~1     # 退回到上一个版本，若要退回到n各版本之前，则使用 HEAD~n
+git reset --hard commit     # 返回到commit码所指定的版本
+
+
+# 查看git状态
+git status      # 显示出工作区(Working Directory)、暂存区(Stage)与目前版本库(Repository)比较的状态
+
+
+# 查看工作区与版本库内某文件的区别
+git diff HEAD -- filename.filetype      # 会显示删了什么，增加了什么内容
+
+
+# 撤销工作区的修改
+git checkout -- filename.filetype   # 修改后还未放到暂存区，则撤销修改至与版本库相同
+
+
+# 撤销暂存区的修改
+git reset HEAD filename.filetype    # 修改后已添加至暂存区，则撤销修改至存放至暂存区之间的状态
+
+
+# 删除文件
+rm filename.filetype    # 在terminal里删除了filename
+git rm filename.filetype    # 将删除该文件的指令提到暂存区 | 别忘了commit
+
+
+
+
+
+
+-------------------------------------------远程仓库----------------------------------------------
+
+
+
+# 将本地git与github远程仓库相连
+git remote add origin git@github.com:elzizyel/learngit.git      # origin是远程库的名字，可更改
+                                                                # 后面的link是在github里创建repo的时候给的ssh
+
+
+# 将本地库的所有内容推送到远程库上
+git push -u origin master       # origin是远程库的名字
+                                # -u 让本地master分支与远程master分支相关联，第一次push时使用,之后推送不用
+
+
+# 克隆库
+git clone git@github.com:elzizyel/gitskills.git     # 克隆该repo到当前文件夹
+
+
+
+
+
+
+
+-------------------------------------------分支管理----------------------------------------------
+
+# 创建并切换到分支
+git checkout -b dev     # dev 为分支名 | -b表示创建并切换
+
+git branch dev          # 创建dev分支
+git checkout dev        # 切换到dev分支
+
+
+# 查看当前文件夹所有分支
+git branch              # 当前分支前会有一个*号
+
+
+# 合并指定分支到当前分支
+git merge dev           # 合并dev到当前分支 | 需要先checkout到当前分支
+git merge --no-ff -m "<commit>" dev     # 禁用fast forward来进行合并分支 | 需要加入commit
+                                        # 使用普通模式合并，合并后的历史有分支，能看出做过合并。
+                                        # fast forward不能看出做过合并
+
+
+# 删除指定分支
+git branch -d dev       # 删除dev这个分支 | -d表删除

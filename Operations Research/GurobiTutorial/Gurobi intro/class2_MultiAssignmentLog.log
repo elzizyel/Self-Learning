@@ -1,0 +1,108 @@
+
+Gurobi 9.0.0 (mac64) logging started Tue Feb 25 17:39:14 2020
+
+Changed value of parameter LogFile to class2_MultiAssignmentLog.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (mac64)
+Optimize a model with 40 rows, 400 columns and 800 nonzeros
+Model fingerprint: 0x2b0bae5e
+Variable types: 0 continuous, 400 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+---------------------------------------------------------------------------
+Multi-objectives: starting optimization with 2 objectives (1 combined) ...
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+Multi-objectives: optimize objective 1 (weighted) ...
+---------------------------------------------------------------------------
+
+Optimize a model with 40 rows, 400 columns and 800 nonzeros
+Variable types: 0 continuous, 400 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -484.7000000
+Presolve time: 0.00s
+Presolved: 40 rows, 400 columns, 800 nonzeros
+Variable types: 0 continuous, 400 integer (400 binary)
+
+Root relaxation: objective -8.391000e+02, 40 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    -839.1000000 -839.10000  0.00%     -    0s
+
+Explored 0 nodes (40 simplex iterations) in 0.03 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: -839.1 -484.7 
+No other solutions better than -839.1
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.391000000000e+02, best bound -8.391000000000e+02, gap 0.0000%
+
+---------------------------------------------------------------------------
+Multi-objectives: solved in 0.05 seconds, solution count 2
+
+
+Gurobi 9.0.0 (mac64) logging started Wed Feb 26 11:23:32 2020
+
+Changed value of parameter LogFile to class2_MultiAssignmentLog.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.0.0 build v9.0.0rc2 (mac64)
+Optimize a model with 40 rows, 400 columns and 800 nonzeros
+Model fingerprint: 0x2b0bae5e
+Variable types: 0 continuous, 400 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+---------------------------------------------------------------------------
+Multi-objectives: starting optimization with 2 objectives (1 combined) ...
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+Multi-objectives: optimize objective 1 (weighted) ...
+---------------------------------------------------------------------------
+
+Optimize a model with 40 rows, 400 columns and 800 nonzeros
+Variable types: 0 continuous, 400 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 5e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -484.7000000
+Presolve time: 0.00s
+Presolved: 40 rows, 400 columns, 800 nonzeros
+Variable types: 0 continuous, 400 integer (400 binary)
+
+Root relaxation: objective -8.391000e+02, 40 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    -839.1000000 -839.10000  0.00%     -    0s
+
+Explored 0 nodes (40 simplex iterations) in 0.03 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: -839.1 -484.7 
+No other solutions better than -839.1
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.391000000000e+02, best bound -8.391000000000e+02, gap 0.0000%
+
+---------------------------------------------------------------------------
+Multi-objectives: solved in 0.04 seconds, solution count 2
+
